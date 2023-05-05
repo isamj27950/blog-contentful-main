@@ -1,6 +1,7 @@
 import React from 'react'
 import { createClient } from 'contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Layout from '@/components/Layout/Layout';
 
 const client = createClient({
   space:process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -55,13 +56,17 @@ export default function Index({ post }) {
   console.log("post:", post);
   const { title, content, featuredImage } = post.fields;
   return (
-    <div>
-      <img
-        src={ featuredImage.fields.file.url}
-        alt={title}
-      />
-    <p>{title}</p>
-    <div>{documentToReactComponents(content)}</div>
-  </div>
+    <Layout> 
+      <div className='container'>
+        <div className='w-full pt-6'> 
+            <img
+            src={ featuredImage.fields.file.url}
+            alt={title}
+            />
+        </div>
+        <p className='font-semibold pt-4'>{title}</p>
+        <div className='pt-4'>{documentToReactComponents(content)}</div>
+      </div>
+    </Layout> 
   );
 }

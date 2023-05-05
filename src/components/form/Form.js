@@ -32,7 +32,7 @@ export default function Form() {
               name="Message"
               id=""
               cols="20"
-              rows="10"
+              rows="5"
               className="w-full border border-gray-400 rounded-lg my-4 p-3 text-gray-500"
             >
               Message

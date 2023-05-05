@@ -10,25 +10,44 @@ export default function Home({posts}) {
   console.log(posts);
   return (
     <Layout>
-      <div>
-       
-      </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-2 px-24"> 
-      {
-        posts.map(post=>(
-          <Link href={`post/${post.fields.slug}`}
-          key={post.sys.id} > 
-            <Card  
-          img={post.fields.featuredImage.fields.file.url}
-          title={post.fields.title}
-          excerpt={post.fields.excerpt}    
-          />
-          </Link>
-        ))
-        }
+      <div className="container">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-1 pt-10 ">
+          {posts.map((post) => (
+            <Link href={`post/${post.fields.slug}`} key={post.sys.id}>
+              <Card
+                img={post.fields.featuredImage.fields.file.url}
+                title={post.fields.title}
+                excerpt={post.fields.excerpt}
+              />
+            </Link>
+          ))}
         </div>
+        <div className="font-light text-center space-x-1 py-10">
+        <button className="border border-gray-200 rounded-full text-black text-xl  h-8 w-8">
+          &#60;{" "}
+        </button>
+        <button className="bg-yellow-400 rounded-full text-white text-xl h-8 w-8 ">
+          1
+        </button>
+        <button className="border border-gray-200 rounded-full text-black text-xl h-8 w-8 ">
+          2
+        </button>
+        <button className="border border-gray-200 rounded-full text-black text-xl h-8 w-8 ">
+          3
+        </button>
+        <button className="border border-gray-200 rounded-full text-black text-xl h-8 w-8 ">
+          4
+        </button>
+        <button className="border border-gray-200 rounded-full text-black text-xl h-8 w-8 ">
+          5
+        </button>
+        <button className="border border-gray-200 rounded-full text-black text-xl h-8 w-8 ">
+          &#62;
+          </button>
+         </div>
+      </div>
     </Layout>
-  )}
+  );}
 
   export async function getStaticProps( ) {
 //1 connect to contentful

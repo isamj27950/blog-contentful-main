@@ -10,7 +10,7 @@ export default function HeroOther() {
           <h1 className="font-semibold text-9xl py-2">Contact Us</h1>
     
           <button className="">
-            {/*<AiOutLIneArrowDown />*/}
+           
             <i class="icofont-arrow-down"></i>
           </button>
         </div>

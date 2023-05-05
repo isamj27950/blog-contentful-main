@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="bg-gray-800 text-gray-400">
       <div className="container">
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-2 pt-6 px-24">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-2 pt-6 ">
           <div>
             <h1 className="text-white font-bold pb-4">
               Read<span className="text-yellow-300">it</span>.
@@ -80,10 +80,8 @@ export default function Footer() {
             <p className="text-white m-2">info@yourdomain.com</p>
           </div>
         </div>
-        <div className="text-center font-extralight grid md:grid-cols-2 xl:grid-cols-1">
-          <p className=" ">Copyright 2023 All rights resserved &#124;This</p>
-          <p className=''> template is madewith &#9829; by Cololib</p>
-        </div>
+        <p className="text-center font-extralight ">Copyright 2023 All rights resserved &#124;This
+          template is madewith &#9829; by Cololib</p>
       </div>
     </div>
   );
