@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    background-image: linear-gradient(to top right,rgba(253, 59, 255, 0.96),rgb(255, 151, 59,0.75)),url('/img/bg_1.jpg') ;
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size: cover;
+    height: 900px;
+    padding: 2rem; 
+}
+
+.container{
+    padding:2rem;
+}
+
+
+
