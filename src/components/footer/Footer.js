@@ -2,7 +2,8 @@ import React from 'react'
 import { DataFooter} from '../datas/DataFooter.Js'
 import { Link } from 'react-router-dom'
 import CardsFooter from '../cards/CardsFooter';
-import { GrFacebook, GrInstagram, GrTwitter } from "react-icons/gr";
+import { GrFacebook, GrInstagram, GrTwitter, } from "react-icons/gr";
+import { BsEnvelope, BsGeoAlt, BsTelephone } from "react-icons/bs";
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
               countries <br /> Volkalia and Consonantia, ther <br />
               live the blid text.
             </p>
-            <p className='flex gap-6 pt-4 text-white'>
+            <p className="flex gap-6 pt-4 text-white">
               <GrTwitter></GrTwitter>
               <GrFacebook></GrFacebook>
               <GrInstagram></GrInstagram>
@@ -70,18 +71,28 @@ export default function Footer() {
           </div>
           <div>
             <h2 className="text-white pb-4">Have a question?</h2>
-            <p className="text-gray-300 m-2">
+            <p className="text-gray-300 m-2 flex">
+              <BsGeoAlt className="mx-3 text-white" />
               203 Fake St.MountainView,
               <br />
               SAns Franscico, California,
               <br /> USA
             </p>
-            <p className="text-white m-2"> ; +2 392 3929 210</p>
-            <p className="text-white m-2">info@yourdomain.com</p>
+            <p className="text-white m-2 flex ">
+              {" "}
+              <BsTelephone className="mx-3 text-white" />
+              +2 392 3929 210
+            </p>
+            <p className="text-white m-2 flex">
+              <BsEnvelope className="mx-3 text-white" />
+              info@yourdomain.com
+            </p>
           </div>
         </div>
-        <p className="text-center font-extralight ">Copyright 2023 All rights resserved &#124;This
-          template is madewith &#9829; by Cololib</p>
+        <p className="text-center font-extralight ">
+          Copyright 2023 All rights resserved &#124;This template is madewith
+          &#9829; by Cololib
+        </p>
       </div>
     </div>
   );

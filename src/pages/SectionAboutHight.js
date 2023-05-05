@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SectionAboutHight() {
   return (
-    <div className="grid xl:grid-cols-2">
+    <div className="hidden md:grid xl:grid-cols-2">
       <div className="relative">     
           <img
             src="https://media.discordapp.net/attachments/1098629662143426671/1103759310686802052/img_about.jpg?width=962&height=960"

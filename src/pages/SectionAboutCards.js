@@ -23,7 +23,7 @@ export default function SectionAboutCards() {
           </div>
         </div>
       </div>
-      <div className='"bg-white p-4 shadow-lg rounded-md mx-2 pb-2  my-2'>
+      <div className='"bg-white p-4 shadow-lg rounded-md mx-2 pb-2  my-2 hidden md:block'>
         <div>
           <p className="text-gray-300 p">
             Far far away, behind the word Mountains,
@@ -31,7 +31,7 @@ export default function SectionAboutCards() {
             texts.
           </p>
         </div>
-        <div className="flex">
+        <div className="flex ">
           <img
             src="https://media.discordapp.net/attachments/1103235218661462046/1103940835659227177/person_1.jpg?width=802&height=960"
             alt=""
@@ -43,7 +43,7 @@ export default function SectionAboutCards() {
           </div>
         </div>
       </div>
-      <div className='"bg-white p-4 shadow-lg rounded-md mx-2 pb-2  my-2'>
+      <div className='"bg-white p-4 shadow-lg rounded-md mx-2 pb-2  my-2 hidden md:block'>
         <div>
           <p className="text-gray-300 p">
             Far far away, behind the word Mountains,
