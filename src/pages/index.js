@@ -22,6 +22,7 @@ export default function Home({posts}) {
             </Link>
           ))}
         </div>
+        {/*Bouttons de bas de page*/}
         <div className="font-light text-center space-x-1 py-10">
         <button className="border border-gray-200 rounded-full text-black text-xl  h-8 w-8">
           &#60;{" "}
